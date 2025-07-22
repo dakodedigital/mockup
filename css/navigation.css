@@ -1,0 +1,149 @@
+/* Default Styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 1em;
+    z-index: 1000;
+}
+
+.logo-nav {
+    max-width: 200px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1.2rem;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--white) !important;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Links */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-right li a {
+    position: relative;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Create the underline */
+.nav-right li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--blue);
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Hover effect: grow outward from center */
+.nav-right li a:hover::after {
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-right li a i {
+    padding-right: 10px;
+    font-size: 0.8em;
+    color: var(--green);
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+/* Optional Hamburger Animation */
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* Mobile Styles */
+@media (max-width: 1024px) {
+    .logo-nav {
+        max-width: 100px;
+    }
+    .hamburger {
+        display: flex;
+        width: 30px;
+        height: 25px; /* adjusting this increases bar spacing */
+    }
+
+    .nav-right {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -350px; /* Hidden off-screen */
+        width: 350px;
+        height: 100vh;
+        background: var(--black);
+        padding: 5em 0 0;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        display: flex;
+    }
+
+    .nav-right.active {
+        right: 0; /* Slide in */
+    }
+    
+    .nav-right li {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .nav-right li a {
+        display: block;
+        font-size: 1em;
+        padding: 1em;
+        margin-left: 0.1em;
+        margin-bottom: 1em;
+        border-radius: 0;
+        text-align: left;
+    }
+    
+    .nav-right li a.button {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+}
