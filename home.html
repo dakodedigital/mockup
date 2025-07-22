@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Home - Dakode Digital</title>
+        <link href="css/bootstrap-utilities.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+        <script src="https://kit.fontawesome.com/f989e268e2.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/navigation.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-left">
+                    <li>
+                        <a href="home.html"><img src="images/dakode-digital.png" class="logo-nav" /></a>
+                    </li>
+                </ul>
+                <button id="menu-toggle" class="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-right" id="nav-menu">
+                    <li>
+                        <a href="about.html"><i class="fa-solid fa-circle-info"></i>About</a>
+                    </li>
+                    <li>
+                        <a href="services.html"><i class="fa-solid fa-receipt"></i>Services & Pricing</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"><i class="fa-solid fa-desktop"></i>Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero-slide">
+                <div class="container-lg">
+                    <p class="display-1 bold mb-4 green" data-aos="fade-up" data-aos-duration="1000">
+                        Stress less.<br />
+                        Grow more.
+                    </p>
+                    <p class="white display-6 my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                        Helping small businesses take their brand to the next level with digital solutions done right.
+                    </p>
+                    <p class="mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <a href="pricing.html" class="button">explore services</a>
+                    </p>
+                </div>
+            </section>
+            <section class="bg-black intro-slide">
+                <div class="container-fluid p-md-0">
+                    <div class="grid gap-5">
+                        <div class="p-2">
+                            <p class="display-1"><i class="fa-solid fa-code"></i></p>
+                            <p class="green bold my-3 display-8">Website Development</p>
+                            <p>Your website is your first impression. Let’s make it an unforgettable one.</p>
+                        </div>
+                        <div class="p-2">
+                            <p class="display-1"><i class="fa-solid fa-list-check"></i></p>
+                            <p class="green bold my-3 display-8">Website Management</p>
+                            <p>Already have a site? Let me help freshen it up – and keep it that way.</p>
+                        </div>
+                        <div class="p-2">
+                            <p class="display-1"><i class="fa-solid fa-pencil"></i></p>
+                            <p class="green bold my-3 display-8">Logo Design & Branding</p>
+                            <p>You're the best at what you do. Let's get you looking like the pro you are.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide">
+                <div class="container-fluid grid gap-5 align-items-center">
+                    <div class="px-0 py-5 px-md-5"><img src="images/website-icon.png" /></div>
+                    <div>
+                        <h1 class="black display-5 mb-4">Great websites don't build themselves...</h1>
+                        <p class="display-8">
+                            I specialize in building clean, custom websites that do all the heavy lifting. No
+                            cookie-cutter templates. No corporate headaches. No complicated tech jargon....
+                        </p>
+                        <p class="display-8">You just focus on what you do best.</p>
+                        <p class="display-8">I'll take care of the rest.</p>
+                        <p class="mt-5"><a href="about.html" class="button">More about me</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="grid align-items-center">
+                <p class="m-auto"><img src="images/Footer-Logo.png" /></p>
+                <ul class="m-5 m-md-0 py-md-0 px-0 px-md-3 text-center col-span-3">
+                    <li><a>about</a></li>
+                    <li><a>services & pricing</a></li>
+                    <li><a>portfolio</a></li>
+                    <li><a>contact me</a></li>
+                </ul>
+                <ul class="m-0 p-0 text-md-center social-links">
+                    <li>
+                        <a href="https://facebook.com/dakodedigital"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/dakodedigital"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@dakodedigital"><i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <hr />
+            <p class="bold text-center gray mt-5" style="font-size: 1.5em">
+                Helping small business owners stress less and grow more with digital done right.
+            </p>
+            <p class="text-center gray mb-0">
+                &copy; Dakode Digital. All rights reserved. <a href="links.html">Resources & Tools.</a>
+            </p>
+        </footer>
+        <script src="js/navigation.js" type="text/javascript"></script>
+        <script src="js/testimonial.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                anchorPlacement: "top-bottom"
+            });
+        </script>
+    </body>
+</html>
