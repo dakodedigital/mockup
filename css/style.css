@@ -354,7 +354,7 @@ main ul li {
 @media screen and (max-width: 1024px) {
     .hero-slide {
         background-image: none;
-        padding: 5em 3em;
+        padding: 5em 2em;
     }
 }
 
