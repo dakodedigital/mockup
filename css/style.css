@@ -371,7 +371,7 @@ main ul li {
 
 @media screen and (max-width: 1024px) {
     .slide, .intro-slide {
-        padding: 2em;
+        padding: 1em;
     }
     .intro-slide {
         clip-path: none;
